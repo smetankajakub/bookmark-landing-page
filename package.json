@@ -1,0 +1,25 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "Bookmark landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-build": "npx tailwindcss -i ./styles/tailwind.css -c ./tailwind.config.js -o ./dist/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smetankajakub/bookmark-landing-page.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "tailwind"
+  ],
+  "author": "Jakub Smetanka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smetankajakub/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/smetankajakub/bookmark-landing-page#readme"
+}
