@@ -14,15 +14,25 @@
 /* .action-btn {
     @apply px-4 py-2 rounded bg-red-;
 } */
-.custom-btn {
-    @apply py-1 px-3 no-underline rounded font-normal bg-gray-600;
+@layer components {
+    .custom-btn {
+        @apply py-1 px-3 no-underline rounded border-2 font-normal;
+    }
+    .primary-btn {
+        @apply border-primary-soft-blue bg-primary-soft-blue
+    }
+    .neutral-btn {
+        @apply border-neutral-blue-grayish bg-neutral-blue-grayish
+    }
+
 }
+
 
 /* .primary-btn {
     @apply m-3;
     background-color: hsl(231, 69%, 60%);
 } */
-.primary-btn{
+/* .primary-btn{
     margin: 5%;
     background-color: hsl(231, 69%, 60%);
     color: #fff;
@@ -34,7 +44,7 @@
     background-color: hsl(229, 8%, 60%);
     color: #fff;
     border: solid hsl(229, 8%, 60%);
-}
+} */
 /* .custom-btn:hover {
     @apply py-1 px-3 no-underline rounded font-normal
 } */
