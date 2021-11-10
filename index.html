@@ -6,27 +6,45 @@
 	<link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.ico">
 	<link href="dist/tailwind.css" rel="stylesheet">
 	<title>Jakub Smetanka | Bookmark landing page</title>
+	<script src="scripts/script.js"></script>
 </head>
 <body style="overflow-x: hidden;">
 
-	<header class="m-10 flex flex-row justify-between">
-		<a href="#"><img src="/images/logo-bookmark.svg" alt=""></a>
-		<svg
-			xmlns="<http://www.w3.org/2000/svg>"
-			id="menu-button"
-			class="h-6 w-6 cursor-pointer md:hidden block"
-			fill="none"
-			viewBox="0 0 24 24"
-			stroke="currentColor"
-		>
-		<path
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			d="M4 6h16M4 12h16M4 18h16"
-			/>
-		</svg>
+	<header class="m-10 flex flex-row justify-between" id="header-burger-closed">
+		<a href="#" id="hide-logo"><img src="/images/logo-bookmark.svg" alt=""></a>
+		<span onclick="burgerMenu()">
+			<img id="hide-btn" src="images/icon-hamburger.svg" alt="">
+		</span>
 	</header>
+	<header class="p-10 hidden bg-neutral-blue-dark opacity-95 h-screen w-screen z-10 absolute top-0" id="header-burger-open">
+		<div class="flex flex-row justify-between w-100 mb-8">
+			<a href="#" id="shown-logo"><img src="/images/logo-bookmark-white.svg" alt=""></a>
+			<span onclick="burgerMenu()" class="size-md animate-pulse">
+				<img id="shown-btn" src="images/icon-close.svg" alt="">
+			</span>
+		</div>
+		<div>
+			<nav id="burger-menu" class="flex flex-col list-none text-center text-xl uppercase text-neutral-blue-grayish">
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#features">Features</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#pricing">Pricing</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#contact">Contact</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class="py-2 border-2 border-solid rounded w-100"><a class="text-white" href="#login">Login</a></li></div>
+			</nav>
+		</div>
+		<div class="w-100 mx-5 absolute bottom-4">
+			<div class="flex flex-row p-5 justify-around text-center w-60 text-center m-auto">
+				<span class="px-3"><img src="images/icon-facebook.svg" alt=""></span>
+				<span class="px-3"><img src="images/icon-twitter.svg" alt=""></span>	
+			</div>
+
+		</div>
+	</header>
+	<!-- <nav class="hidden" id="burger-menu">
+		<li><a class="nav-item" href="#features">Features</a>
+		<li><a class="nav-item" href="#pricing">Pricing</a></li>
+		<li><a class="nav-item" href="#contact">Contact</a></li>
+		<li></li>
+	</nav> -->
 	<main>
 		<section id="main" class="mt-10 mx-10 mb-20">
 			<img src="images/illustration-hero.svg" class="w-100">
