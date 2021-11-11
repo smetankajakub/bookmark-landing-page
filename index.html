@@ -25,9 +25,9 @@
 		</div>
 		<div>
 			<nav id="burger-menu" class="flex flex-col list-none text-center text-xl uppercase text-neutral-blue-grayish">
-				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#features">Features</a></li></div>
-				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#pricing">Pricing</a></li></div>
-				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" href="#contact">Contact</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" onclick="closeHamburger()" href="#features">Features</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" onclick="closeHamburger()" href="#pricing">Pricing</a></li></div>
+				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class=""><a class="text-white tracking-wide" onclick="closeHamburger()" href="#contact">Contact</a></li></div>
 				<div class="border-t-2 p-5 border-t border-neutral-blue-grayish"><li class="py-2 border-2 border-solid rounded w-100"><a class="text-white" href="#login">Login</a></li></div>
 			</nav>
 		</div>
@@ -169,7 +169,7 @@
 
 			</div> -->
 		</section>
-		<section id="faqs" class="my-20 text-center">
+		<section id="faqs" class="my-20 mx-4 text-center">
 			<header>
 				<h2 class="text-neutral-blue-dark font-medium text-xl w-60 m-auto">Frequently Asked Questions</h2>
 				<p class="mt-5 text-neutral-blue-grayish text-xs text-center"> 
@@ -177,7 +177,56 @@
 					answered please feel free to email us.
 				</p>
 			</header>
+			<article class="my-5 mx-4">
+				<li class="flex flex-col text-black border-neutral-blue-grayish border-opacity-30 border-b my-2 py-4">
+					<header class="flex flex-row justify-content-around">
+						<h2 class="text-neutral-blue-dark font-bold">What is Bookmark?</h2>
+						<img id="quest1" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
+					</header>
+					<p id="quest1-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+					</p>
+
+				</li>
+				<li class="flex flex-col text-black border-opacity-30 border-b border-neutral-blue-grayish my-2 py-4">
+					<header class="flex flex-row justify-content-around">
+						<h2 class="text-neutral-blue-dark font-bold text-primary-soft-red">How can I request a new browser?</h2>
+						<img id="quest2" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
+					</header>
+					<p id="quest2-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+						Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  						Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  						ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  						Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+					</p>
+				</li>
+				<li class="flex flex-col text-black border-neutral-blue-grayish border-opacity-30 border-b my-2 py-4">
+					<header class="flex flex-row justify-content-around">
+						<h2 class="text-neutral-blue-dark font-bold text-primary-soft-red">Is there a mobile app?</h2>
+						<img id="quest3" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
+					</header>
+					<p id="quest3-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+						Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+						urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+						sollicitudin ex et ultricies bibendum.
+					</p>
+				</li>
+				<li class="flex flex-col text-black border-neutral-blue-grayish border-opacity-30 border-b my-2 py-4">
+					<header class="flex flex-row justify-content-around">
+						<h2 class="text-neutral-blue-dark font-bold text-primary-soft-red">What about other Chromium browsers?</h2>
+						<img id="quest4" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
+					</header>
+					<p id="quest4-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+						Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+						vitae neque eget nisl gravida pellentesque non ut velit.
+					</p>
+				</li>	
+			</article>
 		</section>
+		<div class="w-100 text-center">
+			<a class="primary-btn custom-btn m-3 shadow-lg" href="#"><span class="text-xs font-medium text-white">More info</span></a>
+		</div>
 	</main>
 	
 
@@ -248,122 +297,15 @@
 				<div style="order: 2; max-width: 45%; margin: 5%;">
 					<img src="images/illustration-hero.svg" width="100%">
 					<div class="ellipse"></div>
-				</div>
+			</div>
 				
 		</section>
 			</div>
-	</section>
-		<div>
-
-		</div>
-
-	
-		<section>
-			
-
-
-	Get it on Chrome
-	Get it on Firefox
-
-	Features
-
-	Our aim is to make it quick and easy for you to access your favourite websites. 
-	Your bookmarks sync between your devices so you can access them on the go.
-
-	Simple Bookmarking
-	Speedy Searching
-	Easy Sharing
-
-	Bookmark in one click
-
-	Organize your bookmarks however you like. Our simple drag-and-drop interface 
-	gives you complete control over how you manage your favourite sites.
-
-	More Info
-
-	Intelligent search
-
-	Our powerful search feature will help you find saved sites in no time at all. 
-	No need to trawl through all of your bookmarks.
-
-	More Info
-
-	Share your bookmarks
-
-	Easily share your bookmarks and collections with others. Create a shareable 
-	link that you can send at the click of a button.
-
-	More Info
-
-	Download the extension
-
-	We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-	got a favourite you’d like us to prioritize.
-
-	Add to Chrome
-	Minimum version 62
-	Add & Install Extension
-
-	Add to Firefox
-	Minimum version 55
-	Add & Install Extension
-
-	Add to Opera
-	Minimum version 46
-	Add & Install Extension
-
-	Frequently Asked Questions
-	
-	Here are some of our FAQs. If you have any other questions you’d like 
-	answered please feel free to email us.
-
-	<!-- Question 1 -->
-	What is Bookmark?
-
-	<!-- Answer 1 -->
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-	justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-	<!-- Question 2 -->
-	How can I request a new browser?
-
-	<!-- Answer 2 -->
-	Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-	Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-	ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-	Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-	<!-- Question 3 -->
-	Is there a mobile app?
-
-	<!-- Answer 3 -->
-	Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-	urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-	sollicitudin ex et ultricies bibendum.
-
-	<!-- Question 4 -->
-	What about other Chromium browsers?
-
-	<!-- Answer 4 -->
-	Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-	vitae neque eget nisl gravida pellentesque non ut velit.
-
-	More Info
-
-	35,000+ already joined
-
-	Stay up-to-date with what we’re doing
-
-	Contact Us
-
-	Features
-	Pricing
-	Contact
-	
+	</section>		
 	<footer>
 		<p class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-			Coded by <a href="#">Your Name Here</a>.
+			Coded by <a href="#">Jakub Smetanka</a>.
 		</p>
 	</footer>
 </body>
