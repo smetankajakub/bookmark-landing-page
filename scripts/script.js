@@ -29,3 +29,26 @@ function changeIcon(id){
         img.classList.add('rotate-180')
     }
 }
+
+function changeTab(id){
+    debugger;
+    console.log('call')
+    let tabs = ['tab-1', 'tab-2', 'tab-3'];
+    index = tabs.findIndex(t => t === id);
+    tabs.splice(index, 1);
+    tab = document.getElementById(id);
+
+    tabs.forEach(el => {
+        if(el !== id){
+            let notActiveTab = document.getElementById(el);
+            let notActiveContent = document.getElementById(el+'-content');
+            notActiveTab.classList.remove('active-tab');
+            if( !notActiveContent.classList.contains('hidden')){
+                notActiveContent.classList.add('hidden');            
+            }
+        }
+    });
+
+    tab.classList.add('active-tab');
+    document.getElementById(id + '-content').classList.remove('hidden');
+}

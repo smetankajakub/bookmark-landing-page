@@ -25,6 +25,10 @@
         @apply border-neutral-blue-grayish bg-neutral-blue-grayish
     }
 
+    .active-tab {
+        @apply  w-40 md:w-60 border-b-4 border-primary-soft-red
+    }
+
 }
 
 
