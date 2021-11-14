@@ -31,8 +31,6 @@ function changeIcon(id){
 }
 
 function changeTab(id){
-    debugger;
-    console.log('call')
     let tabs = ['tab-1', 'tab-2', 'tab-3'];
     index = tabs.findIndex(t => t === id);
     tabs.splice(index, 1);
