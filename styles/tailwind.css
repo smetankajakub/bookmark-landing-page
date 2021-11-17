@@ -24,7 +24,12 @@
     .neutral-btn {
         @apply border-neutral-blue-grayish bg-neutral-blue-grayish
     }
-
+    .action-btn {
+        @apply border-solid border-primary-soft-red bg-primary-soft-red text-white 
+    }
+    .action-btn:hover {
+        @apply bg-white text-primary-soft-red
+    }
     .active-tab {
         @apply  w-40 md:w-60 border-b-4 border-primary-soft-red
     }
