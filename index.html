@@ -52,16 +52,16 @@
 		</div>
 	</header>
 	<main>
-		<section id="main" class="mt-10 mb-10 flex flex-col md:grid md:grid-cols-2 relative w-10/12 mx-auto">
+		<section id="main" class="mt-10 mb-10 flex flex-col md:grid md:grid-cols-2 relative md:w-10/12 mx-auto">
 			<div class="order-1 md:order-2 mx-auto">
-				<img src="images/illustration-hero.svg" class="w-2/3 z-10 mx-auto">
+				<img src="images/illustration-hero.svg" class="md:w-2/3 z-10 mx-auto">
 				<!-- <div class="w-1/3 h-2/4 bg-primary-soft-blue rounded-l-full absolute bottom-0 right-0 z-0"></div> -->
 			</div>
 
-			<div class="order-2 md:order-1 pb-10 mx-auto w-2/3">
+			<div class="order-2 md:order-1 pb-10 md:mx-auto md:w-2/3">
 
-				<h1 class="text-neutral-blue-dark font-medium text-2xl text-left">A Simple Bookmark Manager</h1>
-				<p class="mt-5 text-neutral-blue-grayish text-xs text-left"> 
+				<h1 class="text-neutral-blue-dark font-medium text-2xl text-center md:text-left">A Simple Bookmark Manager</h1>
+				<p class="mt-5 text-neutral-blue-grayish text-xs text-center text-left"> 
 					A clean and simple interface to organize your favourite websites. Open a new 
 					browser tab and see your sites load instantly. Try it for free.
 				</p>
@@ -73,7 +73,7 @@
 			</div>
 		</section>
 
-		<section id="features" class="text-center w-2/3 mx-auto">
+		<section id="features" class="text-center md:w-2/3 mx-auto">
 			<header class="mt-10 mb-10 ">
 				<div class="mx-auto">
 					<h2 class="text-neutral-blue-dark font-medium text-xl">Features</h2>
@@ -93,7 +93,7 @@
 						<img src="images/illustration-features-tab-1.svg" class="mb-10 relative z-10">
 						<!-- <div class="w-1/3 h-2/4 bg-primary-soft-blue rounded-r-full absolute bottom-0 left-0 z-0"></div> -->
 					</div>
-					<div class="text-left ml-5">
+					<div class="text-center md:text-left ml-5">
 						<!-- <div class="w-25 h-25 rounded-45 bg-primary-soft-blue "></div> -->
 						<h2 class="text-neutral-blue-dark font-medium text-xl ">Bookmark in one click</h2>
 						<p class="mt-3 text-neutral-blue-grayish text-xs"> 
@@ -112,7 +112,7 @@
 					<div>
 						<img src="images/illustration-features-tab-2.svg" class="mb-10">
 					</div>
-					<div class="text-left ml-5">
+					<div class="text-center md:text-left ml-5">
 						<h2 class="text-neutral-blue-dark font-medium text-xl ">Intelligent search</h2>
 						<p class="mt-3 text-neutral-blue-grayish text-xs"> 
 							Our powerful search feature will help you find saved sites in no time at all. 
@@ -129,7 +129,7 @@
 					<div>
 						<img src="images/illustration-features-tab-3.svg" class="w-100 mb-10">
 					</div>
-					<div class="text-left ml-5">
+					<div class="text-center md:text-left ml-5">
 						<h2 class="text-neutral-blue-dark font-medium text-xl ">Share your bookmarks</h2>
 						<p class="mt-3 text-neutral-blue-grayish text-xs"> 
 							Easily share your bookmarks and collections with others. Create a shareable 
@@ -143,7 +143,7 @@
 			</article>
 		</section>
 
-		<section id="extensions" class="text-center md:md:w-2/3 mx-auto h-auto">
+		<section id="extensions" class="text-center md:w-2/3 mx-auto h-auto">
 			<!-- <img src="images/illustration-hero.svg" class="w-100"> -->
 			<header class="mt-10 mx-10 mb-10">
 				<h2 class="text-neutral-blue-dark font-medium text-xl ">Download the extension</h2>
@@ -208,7 +208,7 @@
 						<h2 class="text-neutral-blue-dark font-bold">What is Bookmark?</h2>
 						<img id="quest1" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
 					</header>
-					<p id="quest1-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+					<p id="quest1-ans" class="mt-5 text-neutral-blue-grayish text-xs text-center md:text-left hidden">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
 						justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
 					</p>
@@ -219,7 +219,7 @@
 						<h2 class="text-neutral-blue-dark font-bold text-primary-soft-red">How can I request a new browser?</h2>
 						<img id="quest2" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
 					</header>
-					<p id="quest2-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+					<p id="quest2-ans" class="mt-5 text-neutral-blue-grayish text-xs text-center md:text-left hidden">
 						Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
   						Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
   						ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
@@ -231,7 +231,7 @@
 						<h2 class="text-neutral-blue-dark font-bold text-primary-soft-red">Is there a mobile app?</h2>
 						<img id="quest3" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
 					</header>
-					<p id="quest3-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+					<p id="quest3-ans" class="mt-5 text-neutral-blue-grayish text-xs text-center md:text-left hidden">
 						Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
 						urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
 						sollicitudin ex et ultricies bibendum.
@@ -242,7 +242,7 @@
 						<h2 class="text-neutral-blue-dark font-bold">What about other Chromium browsers?</h2>
 						<img id="quest4" class="w-4 ml-auto mt-auto mb-auto text-right transform rotate-180" src="images/icon-arrow.svg" alt="" onclick="changeIcon(this.id)">
 					</header>
-					<p id="quest4-ans" class="mt-5 text-neutral-blue-grayish text-xs text-left hidden">
+					<p id="quest4-ans" class="mt-5 text-neutral-blue-grayish text-xs text-center md:text-left hidden">
 						Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
 						vitae neque eget nisl gravida pellentesque non ut velit.
 					</p>
@@ -253,32 +253,33 @@
 		</section>
 		<section id="contact" class="bg-primary-soft-blue mt-20 py-5 text-center h-2/3">
 			<p class="uppercase font-medium text-white">35,000+ already joined</p>
-			<h2 class="text-white font-medium text-2xl my-2">Stay up-to-date with what we’re doing</h2>
-			<input class="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="aaa@aaa.com">
-			<a class="neutral-btn action-btn m-3 shadow-lg p-2 rounded" href="#"><span class="text-xs font-medium text-white w-80 ">Contact Us</span></a>
+			<h2 class="text-white font-medium text-2xl my-3">Stay up-to-date with what we’re doing</h2>
+			<div class="flex flex-col md:flex-row">
+				<input class="shadow appearance-none border rounde py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline mx-auto rounded w-max" id="email" type="email" placeholder="aaa@aaa.com">
+				<a class="neutral-btn action-btn m-3 shadow-lg py-2 px-3 rounded" href="#"><span class="text-xs font-medium text-white w-80 ">Contact Us</span></a>
+			</div>
+
 		</section>
 	</main>
-	<footer class="p-10 bg-neutral-blue-dark">
-		<div class="w-100 mb-8 text-center">
-			<img src="/images/logo-bookmark-white.svg" alt="">
-		</div>
+	<footer class="p-10 bg-neutral-blue-dark md:flex flex-row">
 		<div>
-			<nav class="flex flex-col list-none text-center text-xl uppercase text-neutral-blue-grayish">
-				<div class="p-5"><li class=""><a class="text-white tracking-wide" href="#features">Features</a></li></div>
-				<div class="p-5"><li class=""><a class="text-white tracking-wide" href="#pricing">Pricing</a></li></div>
-				<div class="p-5"><li class=""><a class="text-white tracking-wide" href="#contact">Contact</a></li></div>
+			<nav class="flex flex-col md:flex-row list-none text-center text-xl uppercase text-neutral-blue-grayish">
+				<li class="p-5"><a class="text-white tracking-wide" href="#"><img src="/images/logo-bookmark-white.svg" class="mx-auto" alt=""></a></li>
+				<li class="p-5"><a class="text-white tracking-wide md:hover:text-primary-soft-red" href="#features">Features</a></li>
+				<li class="p-5"><a class="text-white tracking-wide md:hover:text-primary-soft-red" href="#pricing">Pricing</a></li>
+				<li class="p-5"><a class="text-white tracking-wide md:hover:text-primary-soft-red" href="#contact">Contact</a></li>
 			</nav>
 		</div>
-		<div class="w-100 mx-5 bottom-2">
+		<div class="w-100 mx-5 bottom-2 md:text-right">
 			<div class="flex flex-row p-5 justify-around text-center w-60 text-center m-auto">
-				<span class="px-3"><img src="images/icon-facebook.svg" alt=""></span>
+				<span class="px-3"><img class="fill-current text-primary-soft-red" src="images/icon-facebook.svg" alt=""></span>
 				<span class="px-3"><img src="images/icon-twitter.svg" alt=""></span>	
 			</div>
-			<p class="text-center font-xs text-neutral-blue-grayish">
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-				Coded by <a href="#">Jakub Smetanka</a> Powered by coffee.
-			</p>
 		</div>
 	</footer>
+	<!-- <p class="text-center font-xs text-neutral-blue-grayish">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">Jakub Smetanka</a> Powered by coffee.
+	</p> -->
 </body>
 </html>
