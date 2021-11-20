@@ -15,7 +15,7 @@
 			<img id="hide-btn" src="images/icon-hamburger.svg" alt="">
 		</span>
 	</header>
-	<header class="p-10 hidden bg-neutral-blue-dark opacity-95 h-screen w-screen z-10 absolute top-0" id="header-burger-open">
+	<header class="p-10 hidden bg-neutral-blue-dark opacity-95 h-screen w-screen z-20 absolute top-0" id="header-burger-open">
 		<div class="flex flex-row justify-between w-100 mb-8">
 			<a href="#" id="shown-logo"><img src="/images/logo-bookmark-white.svg" alt=""></a>
 			<span onclick="burgerMenu()" class="size-md animate-pulse">
@@ -52,46 +52,47 @@
 		</div>
 	</header>
 	<main>
-		<section id="main" class="mt-10 mb-10 flex flex-col md:grid md:grid-cols-2 relative md:w-10/12 mx-auto">
-			<div class="order-1 md:order-2 mx-auto">
-				<img src="images/illustration-hero.svg" class="md:w-2/3 z-10 mx-auto">
-				<!-- <div class="w-1/3 h-2/4 bg-primary-soft-blue rounded-l-full absolute bottom-0 right-0 z-0"></div> -->
-			</div>
-
-			<div class="order-2 md:order-1 pb-10 md:mx-auto md:w-2/3">
-
-				<h1 class="text-neutral-blue-dark font-medium text-2xl text-center md:text-left">A Simple Bookmark Manager</h1>
-				<p class="mt-5 text-neutral-blue-grayish text-xs text-center text-left"> 
-					A clean and simple interface to organize your favourite websites. Open a new 
-					browser tab and see your sites load instantly. Try it for free.
-				</p>
-				<div class="mt-8 text-center flex justify-center">
-					<a class="primary-btn custom-btn m-3 shadow-lg" href="#"><span class="text-xs font-medium text-white">Get it to Chrome</span></a>
-					<!-- py-2 px-3 no-underline rounded font-normal bg-blue-200 shadow-md -->
-					<a class="neutral-btn custom-btn m-3 shadow-lg" href="#"> <span class="text-xs font-medium text-white">Get it to Firebox</span></a>
+		<section id="main">
+			<div class="mt-10 mb-10 flex flex-col md:grid md:grid-cols-2 md:w-full z-10">
+				<div class="order-1 md:order-2 mx-auto relative">
+					<img src="images/illustration-hero.svg" class="relative z-10 mx-auto">
+					<div class="w-2/3 h-2/3 bg-primary-soft-blue rounded-l-full absolute bottom-10 right-0 z-0"></div>
+				</div>
+	
+				<div class="order-2 md:order-1 py-10 md:mx-auto md:w-2/3">
+	
+					<h1 class="text-neutral-blue-dark font-medium text-2xl text-center md:text-left">A Simple Bookmark Manager</h1>
+					<p class="mt-5 text-neutral-blue-grayish text-xs text-center text-left"> 
+						A clean and simple interface to organize your favourite websites. Open a new 
+						browser tab and see your sites load instantly. Try it for free.
+					</p>
+					<div class="mt-8 text-center flex justify-center">
+						<a class="primary-btn custom-btn m-3 shadow-lg" href="#"><span class="text-xs font-medium text-white">Get it to Chrome</span></a>
+						<!-- py-2 px-3 no-underline rounded font-normal bg-blue-200 shadow-md -->
+						<a class="neutral-btn custom-btn m-3 shadow-lg" href="#"> <span class="text-xs font-medium text-white">Get it to Firebox</span></a>
+					</div>
 				</div>
 			</div>
 		</section>
-
-		<section id="features" class="text-center md:w-2/3 mx-auto">
-			<header class="mt-10 mb-10 ">
+		<section id="features" class="text-center mx-auto">
+			<header class="mt-10 mb-10 w-2/3 mx-auto">
 				<div class="mx-auto">
 					<h2 class="text-neutral-blue-dark font-medium text-xl">Features</h2>
 					<p class="my-5 text-neutral-blue-grayish text-xs text-center"> 
 						Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
 					</p>
-					<div id="tabs" class="md:grid md:grid-cols-3 list-none text-center font-medium text-neutral-blue-dark md:justify-center md:justify-items-center">
+					<div id="tabs" class="md:grid md:grid-cols-3 list-none text-center font-medium text-neutral-blue-dark md:justify-center md:justify-items-center md:border-b">
 						<div class="border-t-2 md:border-none md:order-1"><li id="tab-1" class="p-3 w-max mx-auto active-tab"><span><a onclick="changeTab('tab-1')" >Simple Bookmarking</a></span></li></div>
 						<div class="border-t-2 md:border-none md:order-2"><li id="tab-2" class="p-3 w-max mx-auto"><span><a onclick="changeTab('tab-2')">Speedy Searching</a></span></li></div>
 						<div class="border-t-2 border-b-2 md:border-none md:order-3"><li id="tab-3" class="p-3 mx-auto w-max"><span><a onclick="changeTab('tab-3')">Easty Sharing</a></span></li></div>
 					</div>	
 				</div>
 			</header>
-			<article id="tab-1-content" class="relative">
-				<div class="mt-10 mx-10 mb-10 md:grid md:grid-cols-2">
-					<div>
-						<img src="images/illustration-features-tab-1.svg" class="mb-10 relative z-10">
-						<!-- <div class="w-1/3 h-2/4 bg-primary-soft-blue rounded-r-full absolute bottom-0 left-0 z-0"></div> -->
+			<article id="tab-1-content" class="relative md:h-60">
+				<div class="mt-10 mb-10 w-4/5 mx-auto md:grid md:grid-cols-2">
+					<div class="mx-auto mb-10 pb-3 max-h-full">
+						<div class="w-2/3 h-1/2 md:w-1/3 md:h-2/3 bg-primary-soft-blue rounded-r-full absolute top-16 md:top-24 left-0"></div>
+						<img src="images/illustration-features-tab-1.svg" class="relative z-10 h-60">
 					</div>
 					<div class="text-center md:text-left ml-5">
 						<!-- <div class="w-25 h-25 rounded-45 bg-primary-soft-blue "></div> -->
@@ -107,10 +108,11 @@
 				</div>
 			</article>
 			<!-- flex flex-col -->
-			<article id="tab-2-content" class="hidden relative">
-				<div class="mt-10 mx-10 mb-10 md:grid md:grid-cols-2">
-					<div>
-						<img src="images/illustration-features-tab-2.svg" class="mb-10">
+			<article id="tab-2-content" class="hidden relative md:h-60">
+				<div class="mt-10 mb-10 w-4/5 mx-auto md:grid md:grid-cols-2">
+					<div class="mx-auto mb-10 pb-3 max-h-full">
+						<div class="w-2/3 h-1/2 md:w-1/3 md:h-2/3 bg-primary-soft-blue rounded-r-full absolute top-16 md:top-24 left-0"></div>
+						<img src="images/illustration-features-tab-2.svg" class="relative z-10 mx-auto h-60">
 					</div>
 					<div class="text-center md:text-left ml-5">
 						<h2 class="text-neutral-blue-dark font-medium text-xl ">Intelligent search</h2>
@@ -124,10 +126,11 @@
 					</div>
 				</div>
 			</article>
-			<article id="tab-3-content" class="hidden relative">
-				<div class="mt-10 mx-10 mb-10 md:grid md:grid-cols-2">
-					<div>
-						<img src="images/illustration-features-tab-3.svg" class="w-100 mb-10">
+			<article id="tab-3-content" class="hidden relative md:h-60">
+				<div class="mt-10 mb-10 w-4/5 mx-auto md:grid md:grid-cols-2">
+					<div class="mx-auto mb-10 pb-3">
+						<div class="w-2/3 h-1/2 md:w-1/3 md:h-2/3 bg-primary-soft-blue rounded-r-full absolute top-16 md:top-24 left-0"></div>
+						<img src="images/illustration-features-tab-3.svg" class="relative z-10 mx-auto h-60">
 					</div>
 					<div class="text-center md:text-left ml-5">
 						<h2 class="text-neutral-blue-dark font-medium text-xl ">Share your bookmarks</h2>
@@ -143,7 +146,7 @@
 			</article>
 		</section>
 
-		<section id="extensions" class="text-center md:w-2/3 mx-auto h-auto">
+		<section id="extensions" class="text-center md:w-3/4 mx-auto h-auto">
 			<!-- <img src="images/illustration-hero.svg" class="w-100"> -->
 			<header class="mt-10 mx-10 mb-10">
 				<h2 class="text-neutral-blue-dark font-medium text-xl ">Download the extension</h2>
@@ -277,9 +280,5 @@
 			</div>
 		</div>
 	</footer>
-	<!-- <p class="text-center font-xs text-neutral-blue-grayish">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-		Coded by <a href="#">Jakub Smetanka</a> Powered by coffee.
-	</p> -->
 </body>
 </html>
